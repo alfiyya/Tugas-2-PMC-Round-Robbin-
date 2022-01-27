@@ -17,11 +17,11 @@ int main()
        {
            printf("\nMasukkan data proses [%d]\n", i + 1);
 
-           printf("waktu kedatangan:\t");
+           printf("Waktu kedatangan:\t");
 
            scanf("%d", &waktu_kedatangan[i]);
 
-           printf("waktu eksekusi:\t");
+           printf("Waktu eksekusi:\t");
 
            scanf("%d", &waktu_eksekusi[i]);
 
@@ -30,7 +30,7 @@ int main()
 
       printf("\nMasukkan waktu kuantum:\t");
       scanf("%d", &time_quantum);
-      printf("\nProcess ID\t\tWaktu Eksekusi \t\t Waktu Penyelesaian\t\t Waktu Tunggu");
+      printf("\nProses ID\t\tWaktu Eksekusi \t\t Waktu Penyelesaian\t\t Waktu Tunggu");
       for(total = 0, i = 0; x != 0;)
       {
             if(temp[i] <= time_quantum && temp[i] > 0)
@@ -47,7 +47,7 @@ int main()
             if(temp[i] == 0 && counter == 1)
             {
                   x--;
-                  printf("\nProcess No[%d]\t\t%d\t\t\t\t%d\t\t\t%d", i + 1, waktu_eksekusi[i], total - waktu_kedatangan[i], total - waktu_kedatangan[i] - waktu_eksekusi[i]);
+                  printf("\nProses No[%d]\t\t%d\t\t\t\t%d\t\t\t%d", i + 1, waktu_eksekusi[i], total - waktu_kedatangan[i], total - waktu_kedatangan[i] - waktu_eksekusi[i]);
                   waktu_tunggu = waktu_tunggu + total - waktu_kedatangan[i] - waktu_eksekusi[i];
                   waktu_penyelesaian = waktu_penyelesaian + total - waktu_kedatangan[i];
                   counter = 0;
